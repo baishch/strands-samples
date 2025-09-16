@@ -107,10 +107,32 @@ builder.set_entry_point("planner")
 
 ## Setup Instructions for Taubench Dataset
 
+### Step 0: Create Python Virtual Environment
+```bash
+# Create a virtual environment
+python -m venv strands-env
+
+# Activate the virtual environment
+# On macOS/Linux:
+source strands-env/bin/activate
+# On Windows:
+strands-env\Scripts\activate
+
+# Upgrade pip
+pip install --upgrade pip
+
+# Install project dependencies
+pip install -r src/requirements.txt
+
+Note: Using a virtual environment isolates project dependencies from your system Python, preventing version conflicts and ensuring reproducible installations across different machines.
+```
+
+
 ### Step 1: Clone the Custom Orchestration Repository
 ```bash
-# Clone the custom orchestration repository
-git clone REPO NAME
+# Clone the custom orchestration repository and navigate to custom orchestration folder
+git clone https://github.com/strands-samples.git
+cd ./02-samples/14-custom-orchestration-airline-assistant
 ```
 
 ### Step 2: Clone the Taubench and Mabench Repository
